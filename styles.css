@@ -1,41 +1,136 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
     color: #fff;
     padding: 1rem 0;
-    text-align: center;
 }
 
-.intro, .features {
-    padding: 2rem;
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.contact-info p, .social-icons a {
+    margin-left: 1rem;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    background: #ff7e5f;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #feb47b;
+}
+
+.hero {
     text-align: center;
+    padding: 2rem 0;
+}
+
+.hero h1, .hero h2 {
+    margin: 1rem 0;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .features {
-    display: flex;
-    justify-content: space-around;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    color: #fff;
+    padding: 2rem 0;
 }
 
-.feature {
-    background-color: #fff;
+.feature-box {
+    text-align: center;
     padding: 1rem;
-    margin: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 1rem;
+}
+
+.feature-box i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about, .services {
+    padding: 2rem 0;
+}
+
+.about h2, .services h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.services {
+    background: #f4f4f4;
+}
+
+.service-box {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
 }
 
 footer {
-    background-color: #333;
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 }
